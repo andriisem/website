@@ -44,4 +44,16 @@
 </xpath>
 </template>
 
+    <template id="head" inherit_id="website.assets_frontend" name="Mail customization">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/website_breadcrumb/static/src/js/breadcrumb_snippet.js"/>
+        </xpath>
+    </template>
+
+    <template id="assent_front" inherit_id="website.assets_frontend">
+		<xpath expr="." position="inside">
+			<link href="/website_breadcrumb/static/src/css/style.css" rel="stylesheet"/>
+		</xpath>
+	</template>
+
 </odoo>
