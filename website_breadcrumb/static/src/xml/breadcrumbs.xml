@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+<template t-name="Breadcrumbs">
+  <div class="page-header event page-title-left page-title-pattern hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <t t-foreach="menus" t-as="menu">
+            <h1 class="title"><t t-esc="menu[0]"/></h1>
+          </t>
+          <h5>
+            Your text
+          </h5>
+
+          <ul class="breadcrumb">
+            <li class="active">
+              <a href="/">Home</a>
+            </li>
+            <t t-foreach="menus" t-as="menu">
+              <li class="active"><t t-esc="menu[0]"/></li>
+            </t>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>w
+</template>
+
+</templates>

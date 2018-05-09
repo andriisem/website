@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?><odoo>
+
+<template id="snippet_breadcrumb" name="Breadcrumb">
+   <section class="s_breadcrumb">
+       <div class="breadcrumb_header"/>
+
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6">
+                   <p class="text">
+                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
+                       nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+                       Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit
+                       lobortis nisl ut aliquip ex ea commodo consequat.
+                   </p>
+               </div>
+               <div class="col-md-6">
+                   <p class="text">
+                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem
+                       nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+                       Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit
+                       lobortis nisl ut aliquip ex ea commodo consequat.
+                   </p>
+               </div>
+               <hr/>
+           </div>
+           <hr/>
+       </div>
+    </section>
+</template>
+
+<template id="add_snippets" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_structure']//div[hasclass('o_panel_body')]" position="inside">
+        <t t-snippet="website_breadcrumb.snippet_breadcrumb"
+           t-thumbnail="/website_breadcrumb/static/description/icon.png"/>
+    </xpath>
+    <xpath expr="//div[@id='snippet_options']" position="inside">
+        <div data-js='s_breadcrumb'
+            data-selector=".s_breadcrumb"
+            data-drop-near="p, h1, h2, h3, blockquote, .well, .panel"
+            data-drop-in=".content"
+           >
+    </div>
+</xpath>
+</template>
+
+</odoo>
