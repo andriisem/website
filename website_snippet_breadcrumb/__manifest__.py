@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    "name": "Website Breadcrumbs",
+    "name": "Snippet Website Breadcrumbs",
     "summary": "Breadcrumbs in website pages",
     "version": "10.0.1.0.0",
     "category": "Website",
