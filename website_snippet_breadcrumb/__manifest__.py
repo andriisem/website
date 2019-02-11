@@ -5,7 +5,7 @@
     "summary": "Breadcrumbs in website pages",
     "version": "10.0.1.0.0",
     "category": "Website",
-    "author": "Andrey Semko (andriisem)",
+    "author": "Andrey Semko | @andriisem",
     "license": "LGPL-3",
     "application": False,
     "installable": True,
